@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+</head>
+<body>
+
+	<section>
+
+		<div class="container-fluid p-3">
+			<div class="col-md-10 offset-md-1">
+				<div class="card paint-card">
+					<h3 class="text-center">Edit Notes</h3>
+
+					<div class="card-body">
+						<form th:action="@{/user/save_notes}" method="post">
+							<div class="mb-3">
+								<label class="form-label">Enter Title</label> <input type="text"
+									class="fom-control" name="title" />
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label">Enter Description</label>
+								<textarea rows="3" cols="" name="description"
+									class="fom-control"></textarea>
+							</div>
+
+							<div class="text-center">
+								<button class="btn btn-primary">Update</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+</body>
+</html>

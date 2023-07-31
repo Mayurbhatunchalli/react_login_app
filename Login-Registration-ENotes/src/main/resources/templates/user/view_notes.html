@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+
+</head>
+<body>
+
+	<section>
+
+		<div class="container">
+			<h3 class="text-center">Notes</h3>
+			<div class="col-md-12 mt-3">
+				<div class="card paint-card">
+					<div class="card-body">
+						<div class="text-center">
+							<img alt="" th:src="@{/img/paper.png}"
+								style="width: 25px; height: 25px;">
+						</div>
+						<h5>Title</h5>
+						<p>
+							Description <br> <br> <span class="font-weight-bold">Upload
+								Date: </span>2023-02-20
+						</p>
+
+						<div class="text-center">
+							<a th:href="@{/user/editNotes}" class="btn btn-primary btn-sm">Edit</a>
+							<a href="#" class="btn btn-danger btn-sm ml-2">Delete</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 mt-3">
+				<div class="card paint-card">
+					<div class="card-body">
+						<div class="text-center">
+							<img alt="" th:src="@{/img/paper.png}"
+								style="width: 25px; height: 25px;">
+						</div>
+						<h5>Title</h5>
+						<p>
+							Description <br> <br> <span class="font-weight-bold">Upload
+								Date: </span>2023-02-20
+						</p>
+
+						<div class="text-center">
+							<a th:href="@{/user/editNotes}" class="btn btn-primary btn-sm">Edit</a>
+							<a href="#" class="btn btn-danger btn-sm ml-2">Delete</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">Total Elements: 20</div>
+				<div class="col-md-6">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#"
+								aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+							</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#"
+								aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+							</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+</body>
+</html>

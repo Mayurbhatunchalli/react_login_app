@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+	integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-success"> -->
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">E-Notes</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="#" th:href="@{/home}"> Home</a></li>
+				</ul>
+			</div>
+
+			<form class="d-flex">
+				<a href="#" class="btn btn-light" th:href="@{/login}"><i
+					class="fa-solid fa-right-to-bracket"></i> Login</a> <a href="#"
+					class="btn btn-light ms-2" th:href="@{/register}"><i
+					class="fa-solid fa-user-plus"></i> SignUp</a>
+			</form>
+
+		</div>
+	</nav>
+
+	<section>
+		<div class="backimg">
+			<div class="text-white text-center">
+
+				<h1>E-Notes - Save Notes</h1>
+				<p>Start collecting your notes in a smarter way. We are
+					providing the smarter way of providing notes.</p>
+				<button class="btn bg-primary text-white">Get Started</button>
+			</div>
+
+		</div>
+
+	</section>
+
+</body>
+</html>
